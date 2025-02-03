@@ -75,7 +75,8 @@ fun SignIn(
         Spacer(modifier = Modifier.height(16.dp))
         Button(onClick = {
             authViewModel.signIn(email, password)
-        }) {
+        },
+            enabled = authState.value != AuthState.Loading) {
 
             Text(text = "Login")
         }
