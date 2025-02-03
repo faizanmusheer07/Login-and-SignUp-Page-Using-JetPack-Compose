@@ -38,6 +38,7 @@ fun HomePage(
 
         TextButton(onClick = { authViewModel.signOut() }) {
             Text(text = "Sign Out")
+            // faizan musheer
         }
     }
 }
